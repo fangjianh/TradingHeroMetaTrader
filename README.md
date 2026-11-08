@@ -57,6 +57,9 @@ TradingHeroMetaTrader/
 ├─ docs/
 │  ├─ images/
 │  │  ├─ mt4-bridge-config.png
+│  │  ├─ mt4-webrequest-settings.png
+│  │  ├─ mt4-ea-general-settings.png
+│  │  ├─ mt4-ea-input-settings.png
 │  │  ├─ mt5-bridge-config.png
 │  │  ├─ mt5-webrequest-settings.png
 │  │  ├─ mt5-ea-general-settings.png

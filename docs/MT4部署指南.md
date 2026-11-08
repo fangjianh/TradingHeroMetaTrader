@@ -49,6 +49,8 @@
 http://127.0.0.1
 ```
 
+![MT4 允许 WebRequest 设置](images/mt4-webrequest-settings.png)
+
 不要添加公网地址，也不要把端口 80 映射到其他设备。
 
 ## 5. 加载 EA
@@ -58,6 +60,14 @@ http://127.0.0.1
 3. 仅查看数据时可保持 `AllowLiveTrading=false`。
 4. 如需下单、平仓和撤单，将 `AllowLiveTrading=true`。
 5. 需要真实交易时，同时勾选 EA 的“允许实时自动交易”，并开启 MT4 顶部的“自动交易”。
+
+EA 常用设置中启用“允许实时自动交易”和“允许导入外部 EA 交易”：
+
+![MT4 EA 允许自动交易](images/mt4-ea-general-settings.png)
+
+EA 输入参数中将 `AllowLiveTrading` 设置为 `true`：
+
+![MT4 EA 输入参数](images/mt4-ea-input-settings.png)
 
 EA 参数中的默认值：
 
