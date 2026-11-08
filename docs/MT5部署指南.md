@@ -6,7 +6,7 @@
 
 - Windows 版 TradingHero。
 - 已安装并至少启动过一次的 MetaTrader 5。
-- 一个长度不少于 24 个字符的随机 Token。
+- 本仓库的本地目录。
 
 建议先使用模拟账户完成连接与交易验证。
 
@@ -17,8 +17,7 @@
 ```json
 [
   {
-    "feat": "MT5",
-    "token": "replace-with-your-own-random-token-for-mt5"
+    "feat": "MT5"
   }
 ]
 ```
@@ -27,16 +26,16 @@
 
 ## 3. 安装 EA
 
-TradingHero 启动时会尝试查找 MT5 数据目录，并自动执行以下操作：
+在 TradingHero 的 MT5 面板点击“桥接配置”，选择本仓库目录和 MT5 数据目录。确认后 TradingHero 会自动生成 Token 并执行仓库根目录的 `launch.bat`：
 
-- 将 `TradingHeroBridge.mq5` 和 `TradingHeroBridge.ex5` 复制到 `MQL5\Experts\TradingHero`。
+- 只将 `TradingHeroBridge.ex5` 复制到 `MQL5\Experts\TradingHero`。
 - 在 `MQL5\Files\TradingHero\bridge.conf` 写入本地网关地址和 Token。
 - 在 `http://127.0.0.1:81` 启动 MT5 本地网关。
 
 如果导航器中没有出现 EA：
 
 1. 在 MT5 中选择“文件 > 打开数据文件夹”。
-2. 将本仓库 `mt5` 目录中的 `.mq5` 和 `.ex5` 文件复制到 `MQL5\Experts\TradingHero`。
+2. 将本仓库 `mt5` 目录中的 `TradingHeroBridge.ex5` 复制到 `MQL5\Experts\TradingHero`。
 3. 回到 MT5，在“导航器 > 智能交易系统”上点击右键并选择“刷新”。
 4. 如果 `.ex5` 无法加载，使用 MetaEditor 打开 `.mq5` 并重新编译。
 
@@ -62,13 +61,13 @@ http://127.0.0.1:81
 
 EA 参数中的默认值：
 
-| 参数 | 默认值 | 说明 |
-| --- | --- | --- |
-| `BridgeUrl` | `http://127.0.0.1:81` | MT5 本地网关 |
-| `BridgeToken` | 空 | 正常情况下从 `bridge.conf` 读取 |
-| `AllowLiveTrading` | `false` | 是否允许执行真实交易命令 |
-| `PollIntervalMilliseconds` | `300` | 命令轮询间隔 |
-| `SnapshotIntervalMilliseconds` | `1000` | 账户快照发送间隔 |
+| 参数                           | 默认值                | 说明                            |
+| ------------------------------ | --------------------- | ------------------------------- |
+| `BridgeUrl`                    | `http://127.0.0.1:81` | MT5 本地网关                    |
+| `BridgeToken`                  | 空                    | 正常情况下从 `bridge.conf` 读取 |
+| `AllowLiveTrading`             | `false`               | 是否允许执行真实交易命令        |
+| `PollIntervalMilliseconds`     | `300`                 | 命令轮询间隔                    |
+| `SnapshotIntervalMilliseconds` | `1000`                | 账户快照发送间隔                |
 
 ## 6. 验证连接
 
