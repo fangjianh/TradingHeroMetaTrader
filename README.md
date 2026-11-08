@@ -7,6 +7,16 @@ TradingHero MetaTrader Bridge 用于在 Windows 版 TradingHero 中连接本机 
 - 平仓、撤单以及全部平仓并撤单。
 - 查看 MT4/MT5 返回的交易品种及合约属性。
 
+## 效果预览
+
+### MT4 桥接配置
+
+![TradingHero MT4 桥接配置](docs/images/mt4-bridge-config.png)
+
+### MT5 桥接配置
+
+![TradingHero MT5 桥接配置](docs/images/mt5-bridge-config.png)
+
 ## 工作方式
 
 TradingHero 在本机启动两个只监听回环地址的网关：
@@ -45,6 +55,9 @@ TradingHeroMetaTrader/
 │  ├─ TradingHeroBridge.mq5
 │  └─ TradingHeroBridge.ex5
 ├─ docs/
+│  ├─ images/
+│  │  ├─ mt4-bridge-config.png
+│  │  └─ mt5-bridge-config.png
 │  ├─ MT4部署指南.md
 │  ├─ MT5部署指南.md
 │  └─ 常见问题.md
