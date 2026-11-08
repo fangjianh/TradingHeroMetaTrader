@@ -1,0 +1,10 @@
+# 本地功能配置包含桥接 Token，禁止提交。
+config.json
+
+# TradingHero 自动写入 MetaTrader 数据目录的认证配置。
+bridge.conf
+**/bridge.conf
+
+# MetaTrader 运行日志和 EA 参数预设。
+*.log
+*.set

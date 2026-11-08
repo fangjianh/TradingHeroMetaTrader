@@ -1,0 +1,8 @@
+* text=auto
+
+*.md text eol=lf
+*.json text eol=lf
+*.mq4 text eol=crlf
+*.mq5 text eol=crlf
+*.ex4 binary
+*.ex5 binary
