@@ -57,7 +57,10 @@ TradingHeroMetaTrader/
 ├─ docs/
 │  ├─ images/
 │  │  ├─ mt4-bridge-config.png
-│  │  └─ mt5-bridge-config.png
+│  │  ├─ mt5-bridge-config.png
+│  │  ├─ mt5-webrequest-settings.png
+│  │  ├─ mt5-ea-general-settings.png
+│  │  └─ mt5-ea-input-settings.png
 │  ├─ MT4部署指南.md
 │  ├─ MT5部署指南.md
 │  └─ 常见问题.md

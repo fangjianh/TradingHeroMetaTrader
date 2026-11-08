@@ -49,6 +49,8 @@
 http://127.0.0.1:81
 ```
 
+![MT5 允许 WebRequest 设置](images/mt5-webrequest-settings.png)
+
 不要添加公网地址，也不要把端口 81 映射到其他设备。
 
 ## 5. 加载 EA
@@ -58,6 +60,14 @@ http://127.0.0.1:81
 3. 仅查看数据时可保持 `AllowLiveTrading=false`。
 4. 如需下单、平仓和撤单，将 `AllowLiveTrading=true`。
 5. 需要真实交易时，同时勾选 EA 的“允许算法交易”，并开启 MT5 顶部的“算法交易”。
+
+EA 常规设置中启用“允许算法交易”：
+
+![MT5 EA 允许算法交易](images/mt5-ea-general-settings.png)
+
+EA 输入参数中将 `AllowLiveTrading` 设置为 `true`：
+
+![MT5 EA 输入参数](images/mt5-ea-input-settings.png)
 
 EA 参数中的默认值：
 
